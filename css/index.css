@@ -49,6 +49,8 @@ body{
 }
 h1{
     color: #FBFFFB;
+    font-size: 6rem;
+    font-family: 'Oxygen', sans-serif;
 }
 h2{
     font-size: 3rem;
