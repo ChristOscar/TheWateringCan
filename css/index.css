@@ -134,7 +134,7 @@ nav{
     align-items: center;
 }
 #about div{
-    width: 27%;
+    width: 20%;
     margin-right: 10%;
 }
 
@@ -146,7 +146,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
 }
-.cacti, .tropicals, .succulants, .text{
+.cacti, .tropicals, .succulents, .text{
     width: 50%;
 }
 .text{
@@ -168,7 +168,7 @@ nav{
     background-color: #fff;
     color:#266035
 }
-.succulants{
+.succulents{
     background-image: url('../images/succulants.jpg');
 }
 .cacti{
@@ -213,4 +213,116 @@ footer a, footer h3{
 .bottom p{
     margin-right:5%;
     margin-top:2%;
+}
+
+
+/* Responsive Styles */
+
+
+/* Tablet View - 800px */
+
+@media (max-width: 800px) {
+    /* header section styles */
+    .logo{
+        width:8%;
+    }
+    /* about section styles */
+    #about div{
+        width: 50%;
+        margin-right: 3%;
+        margin-top: 20%;
+    }
+
+    .text div{
+        width: 80%;
+    }
+    /* footer section  */
+    .bottom p{
+        margin-right: 9.5%;
+    }
+    left div.info{
+        line-height: 2;
+    }
+}
+
+
+
+
+/* Mobile View - 500px */
+@media (max-width: 500px) {
+    /* Header section styles */
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2%;
+    }
+    .links{
+        width: 100%;
+    }
+    /* about section styles */
+    #about{
+        background-image:none;
+        background-color: rgb(197, 193, 193);
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #about div{
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+    /* Shop section styles */
+    .container{
+        justify-content: center;
+    }
+    .cacti, .tropicals, .succulents, .text{
+        width: 80%;
+    }
+    .text div{
+        width: 100%;
+    }
+    .cacti, .tropicals, .succulents{
+        height: 40vh;
+    }
+    .one{
+        order:1;
+    }
+    .two{
+        order: 2;
+    }
+    .three{
+        order: 3;
+    }
+    .four{
+        order: 4;
+    }
+    .five{
+        order: 5;
+    }
+    .six{
+        order: 6;
+    }
+    /* footer section styles */
+    footer{
+        justify-content: center;
+    }
+    footer h2, .left, .right, .bottom{
+        width: 90%;
+        text-align: center;
+    }    
+    footer h3{
+        text-align: center;
+    }
+    .bottom p{
+        margin: 0;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    .right{
+        order: -1;
+    }
+    h2{
+        order: -2;
+    }
 }
